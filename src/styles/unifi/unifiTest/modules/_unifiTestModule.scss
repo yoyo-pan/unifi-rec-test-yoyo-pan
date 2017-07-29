@@ -1,0 +1,22 @@
+.unifiTest {
+
+}
+
+.unifiTest--centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  @include transform(translate(-50%, -50%));
+}
+
+  .unifiTest__headline {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  .unifiTest__link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #00a0db;
+  }
