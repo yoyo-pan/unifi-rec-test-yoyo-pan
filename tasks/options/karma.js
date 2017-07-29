@@ -29,47 +29,6 @@ module.exports = function (grunt, data) {
     unit: {
       autoWatch: false,
       singleRun: true
-    },
-    ci: {
-      autoWatch: false,
-      singleRun: true,
-      browserify: {
-        watch: false,
-        debug: false,
-        transform: [
-          ['require-globify'],
-          ['jadeify', jadeifyOptions]
-        ]
-      },
-      coverageReporter: {}
-    },
-    dev: {
-      autoWatch: false,
-      singleRun: true,
-      browserify: {
-        watch: true,
-        debug: true,
-        transform: [
-          ['require-globify'],
-          ['jadeify', jadeifyOptions]
-        ]
-      },
-      coverageReporter: {},
-      reporters: ['progress']
-    },
-    debug: {
-      autoWatch: false,
-      singleRun: false,
-      browserify: {
-        watch: true,
-        debug: true,
-        transform: [
-          ['require-globify'],
-          ['jadeify', jadeifyOptions]
-        ]
-      },
-      coverageReporter: {},
-      reporters: ['progress']
     }
   };
 

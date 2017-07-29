@@ -50,16 +50,16 @@ module.exports = function(grunt, undefined) {
     [
       'eslint:local',
       'build',
-      'karma:ci',
+      'karma:unit',
       'concurrent:development'
     ]);
 
   grunt.registerTask(
     'test',
-    'single run tests for ci',
+    'single run tests',
     [
-      'eslint:ci',
+      'eslint:local',
       'build',
-      'karma:ci'
+      'karma:unit'
     ]);
 };

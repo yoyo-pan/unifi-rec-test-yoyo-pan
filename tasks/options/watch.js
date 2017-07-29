@@ -1,10 +1,10 @@
-/*
+/**
  * 1. Prevents issue where grunt dies from karma triggering multiple times.
  */
 module.exports = function (grunt) {
   grunt.event.on('watch', function (action, filepath) {
 
-    if (!filepath.startsWith('example/build') && filepath.endsWith('.js')) {
+    if (!filepath.startsWith('build') && filepath.endsWith('.js')) {
       grunt.config('changedFiles', filepath);
     }
   });

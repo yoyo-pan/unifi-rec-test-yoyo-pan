@@ -4,7 +4,7 @@
   "main": "devtest.js",
   "liveReloadPort": 35729,
   "scripts": {
-    "clean": "rm -Irf node_modules bundle vendor tmp coverage",
+    "clean": "rm -Irf node_modules tmp coverage",
     "test": "node_modules/karma/bin/karma start test/karma.conf.js"
   },
   "config": {
@@ -47,7 +47,6 @@
     "karma-chrome-launcher": "~2.1.0",
     "karma-coverage": "~1.1.1",
     "karma-jasmine": "~1.1.0",
-    "lato-font-face": "^1.1.0",
     "load-grunt-config": "~0.16.0",
     "require-globify": "^1.4.1"
   }

@@ -5,30 +5,6 @@ var files = [
   './test/**/*.js'
 ];
 
-var ciGlobals = [
-  'module',
-  'require',
-  'jasmine',
-  'describe',
-  'beforeAll',
-  'afterAll',
-  'beforeEach',
-  'afterEach',
-  'it',
-  'expect',
-  'inject',
-  'angular',
-  'protractor',
-  'process',
-  'sinon',
-  'xit',
-  'xdescribe',
-  'spyOn',
-  'browser',
-  'by',
-  'element'
-];
-
 var localGlobals = [
   'module',
   'require',
@@ -61,8 +37,8 @@ var localRules = {
   'quotes': [2, 'single'],
   'global-strict': ['error', 'never'],
   'key-spacing': ['error', {align: 'value'}],
-  'no-alert': [2, 'error'],
-  'no-console': [2, 'error'],
+  'no-alert': [1, 'error'],
+  'no-console': [1, 'error'],
   'no-underscore-dangle': ['error', {'allow': []}],
   'no-multi-spaces': ['error', {exceptions: {'VariableDeclarator': true}}],
   'no-return-assign': ['error'],
@@ -70,13 +46,6 @@ var localRules = {
   'no-unused-expressions': ['error', {'allowTernary': true}],
   'no-use-before-define': ['error', {'functions': false}]
 };
-
-var ciRules = {};
-Object.keys(localRules).forEach(function(key) {
-  ciRules[key] = localRules[key];
-});
-localRules['no-alert'] = [1, 'error'];
-localRules['no-console'] = [1, 'error'];
 
 module.exports = {
   options: {
@@ -92,15 +61,6 @@ module.exports = {
   local: {
     files: {
       src: files
-    }
-  },
-  ci: {
-    files: {
-      src: files
-    },
-    options: {
-      globals: ciGlobals,
-      rules: ciRules
     }
   }
 };
