@@ -63,14 +63,17 @@ Point your browser to `http://localhost:6060`.
 ## Assignment
 
 1. Get everything running
-2. Hook up the "Configure me" link
+2. Hook up the "Configure me" link to go to http://localhost:6060/#!/configure
 3. On the new "Configure me" page create 2 directives
-  * A form directive
-  * A summary of the form submission
+    * A form directive
+    * A summary of the form submission
+4. Style the page to look like *assignment.png*
 4. Write some unit tests for the form to make sure that everything does what it's supposed to do
 
-* Please make sure that this new page is responsive and works in all browser sizes.
-* Please match the comp exactly. Pay attention to details.
+
+**Please make sure that this new page is responsive and works in all browser sizes.**
+**Please match the comp exactly. Pay attention to details.**
+**Please use [translations](https://angular-translate.github.io/docs/#/guide) for all strings.**
 
 
 ## Helpful links
