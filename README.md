@@ -78,6 +78,8 @@ Point your browser to `http://localhost:6060`.
 
 ## Helpful links
 
-[UniFi Styles](http://ubnt-css.herokuapp.com/#/app/typography)
-[UniFi Grid](http://ubnt-css.herokuapp.com/#/base/grid-containers)
-[BEM Syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+* [UniFi Styles](http://ubnt-css.herokuapp.com/#/app/typography)
+* [UniFi Grid](http://ubnt-css.herokuapp.com/#/base/grid-containers)
+* [BEM Syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+
+![assignment](https://github.com/Ubiquiti-UI/unifi-devtest/blob/master/assignment.png)
