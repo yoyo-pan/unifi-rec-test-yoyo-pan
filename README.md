@@ -3,6 +3,7 @@
  * [Installation](#installation)
  * [Dependencies](#dependencies)
  * [Run](#run)
+ * [Assignment](#assignment)
 
 ## Installation
 
@@ -43,11 +44,37 @@ npm install
 
 ## Run
 
+To run and develop the app
 ```
 grunt
+```
+
+To just run the tests
+```
+grunt test
 ```
 
 
 ### View
 
-Point your browser to `https://localhost:6060`.
+Point your browser to `http://localhost:6060`.
+
+
+## Assignment
+
+1. Get everything running
+2. Hook up the "Configure me" link
+3. On the new "Configure me" page create 2 directives
+  * A form directive
+  * A summary of the form submission
+4. Write some unit tests for the form to make sure that everything does what it's supposed to do
+
+* Please make sure that this new page is responsive and works in all browser sizes.
+* Please match the comp exactly. Pay attention to details.
+
+
+## Helpful links
+
+[UniFi Styles](http://ubnt-css.herokuapp.com/#/app/typography)
+[UniFi Grid](http://ubnt-css.herokuapp.com/#/base/grid-containers)
+[BEM Syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)

@@ -50,6 +50,7 @@ module.exports = function(grunt, undefined) {
     [
       'eslint:local',
       'build',
+      'karma:ci',
       'concurrent:development'
     ]);
 
