@@ -70,7 +70,7 @@ Point your browser to `http://localhost:6060`.
 4. Style the page to look like *assignment.png*
 4. Write some unit tests for the form to make sure that everything does what it's supposed to do
 
-
+* **Please clone the repository. Do not fork it. Submit a pull request to your own repository with your changes.**
 * **Please make sure that this new page is responsive and works in all browser sizes.**
 * **Please match the comp exactly. Pay attention to details.**
 * **Please use [translations](https://angular-translate.github.io/docs/#/guide) for all strings.**
@@ -82,4 +82,4 @@ Point your browser to `http://localhost:6060`.
 * [UniFi Grid](http://ubnt-css.herokuapp.com/#/base/grid-containers)
 * [BEM Syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
-![assignment](https://github.com/Ubiquiti-UI/unifi-devtest/blob/master/assignment.png)
+![assignment](https://github.com/Ubiquiti-UI/unifi-rec-test/blob/master/assignment.png)
