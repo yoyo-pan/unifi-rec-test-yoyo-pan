@@ -2,6 +2,7 @@
 
 function ConfigureController (
 	$scope,
+	$location,
 	translateResolver
 ) {
     translateResolver.resolve('example');
@@ -50,8 +51,12 @@ function ConfigureController (
 		$scope.config.favoriteColors = $scope.getFavoriteColors();
 		$scope.response = Object.assign({}, $scope.config);
 	};
+
+	$scope.onCancel = function () {
+		$location.url('/');
+	};
 }
 
-ConfigureController.$inject = ['$scope', 'translateResolver'];
+ConfigureController.$inject = ['$scope', '$location', 'translateResolver'];
 
 angular.module('example').controller('ConfigureController', ConfigureController);

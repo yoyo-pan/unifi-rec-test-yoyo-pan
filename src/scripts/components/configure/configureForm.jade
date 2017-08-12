@@ -38,5 +38,5 @@ div.unifiConfigure__footer
   div(ng-click="onReset()").unifiConfigure__reset.col-md-2
     | {{ 'FORM_RESET' | translate }}
   div.col-md-5
-  button(type="button").btn.btn-danger.col-md-2
+  button(type="button" ng-click="onCancel()").btn.btn-danger.col-md-2
     | {{ 'FORM_CANCEL' | translate }}
