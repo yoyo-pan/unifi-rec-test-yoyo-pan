@@ -1,0 +1,55 @@
+.unifiConfigure {
+
+}
+
+.unifiConfigure__main {
+  display: flex;
+}
+
+.unifiConfigure__header,
+.unifiConfigure__body,
+.unifiConfigure__footer {
+  margin-left: 15px;
+  margin-right: 15px;  
+}
+
+.unifiConfigure__header {
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.unifiConfigure__body {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.unifiConfigure__formControl {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 10px 0px;
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin:2px 5px;
+  }
+}
+
+.unifiConfigure__footer {
+  border-top: 1px solid gray;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.unifiConfigure__reset {
+  color: #5c93c7;
+  font-size: 14px;
+  &:hover {
+    cursor: pointer;
+    color: #3675b0;
+  }
+}

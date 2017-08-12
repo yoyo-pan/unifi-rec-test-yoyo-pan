@@ -1,4 +1,14 @@
 {
   "EXAMPLE_HELLO_WORLD": "Hello world",
-  "EXAMPLE_SITE_CONFIGURE": "Configure me!"
+  "EXAMPLE_SITE_CONFIGURE": "Configure me!",
+  "CONFIGURE_CONFIGURATION": "Confguration",
+  "CONFIGURE_RESPONSE": "Response",
+  "FORM_FIRST_NAME": "First Name",
+  "FORM_LAST_NAME": "Last Name",
+  "FORM_FAVORITE_COLORS": "Favarite Colors",
+  "FORM_FAVORITE_CITY": "Favorite City",
+  "FORM_VERIFIED": "Verified",
+  "FORM_APPLY_CHANGES": "Apply Changes",
+  "FORM_RESET": "Reset",
+  "FORM_CANCEL": "Cancel"
 }

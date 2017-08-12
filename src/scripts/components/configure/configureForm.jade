@@ -1,0 +1,42 @@
+div.unifiConfigure__header
+  | {{ 'CONFIGURE_CONFIGURATION' | translate }}
+div.unifiConfigure__body
+  div.unifiConfigure__formControl
+    div.col-sm-5
+      | {{ 'FORM_FIRST_NAME' | translate }}
+    div.col-sm-7
+      input(type="text" ng-model="config.firstName")
+  div.unifiConfigure__formControl
+    div.col-sm-5
+      | {{ 'FORM_LAST_NAME' | translate }}
+    div.col-sm-7
+      input(type="text" ng-model="config.lastName")
+  div.unifiConfigure__formControl
+    div.col-sm-5
+      | {{ 'FORM_FAVORITE_COLORS' | translate }}
+    div.col-sm-7
+      span(ng-repeat="color in favoriteColors")
+        input(type="checkbox" ng-model="color.checked")
+        | {{ color.label }}
+  div.unifiConfigure__formControl
+    div.col-sm-5
+      | {{ 'FORM_FAVORITE_CITY' | translate }}
+    div.col-sm-7
+      span(ng-repeat="city in favoriteCities")
+        input(type="radio" name="city" ng-value="city" ng-model="config.favoriteCity")
+        | {{ city }}
+  div.unifiConfigure__formControl
+    div.col-sm-5
+      | {{ 'FORM_VERIFIED' | translate }}
+    div.col-sm-7
+      label.switch
+        input(type="checkbox" ng-model="config.verified")
+        span.slider
+div.unifiConfigure__footer
+  button(type="button" ng-click="onApply()").btn.btn-success.col-sm-3
+    | {{ 'FORM_APPLY_CHANGES' | translate }}
+  div(ng-click="onReset()").unifiConfigure__reset.col-sm-2
+    | {{ 'FORM_RESET' | translate }}
+  div.col-sm-5
+  button(type="button" ng-click="onCancel()").btn.btn-danger.col-sm-2
+    | {{ 'FORM_CANCEL' | translate }}
