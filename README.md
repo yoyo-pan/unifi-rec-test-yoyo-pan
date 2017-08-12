@@ -24,7 +24,6 @@ nvm use 4.4.7
 Make sure you have the following gems installed:
 
 ```
-gem install sass
 gem install compass
 ```
 
