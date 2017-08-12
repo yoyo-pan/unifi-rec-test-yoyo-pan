@@ -6,14 +6,50 @@ function ConfigureController (
 ) {
     translateResolver.resolve('example');
 	$scope.favoriteColors = [
-		{ label: 'Red', value: false },
-		{ label: 'Orange', value: false },
-		{ label: 'Yellow', value: false },
-		{ label: 'Green', value: false },
-		{ label: 'Blue', value: false },
-		{ label: 'Purple', value: false },
-		{ label: 'Black', value: false}];
+		{ label: 'Red', checked: false },
+		{ label: 'Orange', checked: false },
+		{ label: 'Yellow', checked: false },
+		{ label: 'Green', checked: false },
+		{ label: 'Blue', checked: false },
+		{ label: 'Purple', checked: false },
+		{ label: 'Black', checked: false}];
 	$scope.favoriteCities = ['Chicago', 'Seattle', 'Los Angeles'];
+	$scope.response = {};
+	init();
+
+	function init () {
+		$scope.favoriteColors.forEach(function(color) {
+			color.checked = false;
+		});
+
+		$scope.config = {
+			firstName: '',
+			lastName: '',
+			favoriteColors: [],
+			favoriteCity: '',
+			verified: false
+		};
+	}
+
+	$scope.getFavoriteColors = function () {
+		var colors = [];
+		$scope.favoriteColors.forEach(function (color) {
+			if (color.checked) {
+				colors.push(color.label);
+			}
+		});
+
+		return colors.join(', ');
+	};
+
+	$scope.onReset = function () {
+		init();
+	};
+
+	$scope.onApply = function () {
+		$scope.config.favoriteColors = $scope.getFavoriteColors();
+		$scope.response = Object.assign({}, $scope.config);
+	};
 }
 
 ConfigureController.$inject = ['$scope', 'translateResolver'];

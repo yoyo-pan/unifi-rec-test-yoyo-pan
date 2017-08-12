@@ -1,3 +1,29 @@
 div.unifiConfigure__header
-  {{'CONFIGURE_RESPONSE' | translate}}
+  | {{'CONFIGURE_RESPONSE' | translate}}
+div.unifiConfigure__body
+  div.unifiConfigure__formControl
+    div.col-md-5
+      | {{ 'FORM_FIRST_NAME' | translate }}
+    div.col-md-7
+      | {{ response.firstName }}
+  div.unifiConfigure__formControl
+    div.col-md-5
+      | {{ 'FORM_LAST_NAME' | translate }}
+    div.col-md-7
+      | {{ response.lastName }}
+  div.unifiConfigure__formControl
+    div.col-md-5
+      | {{ 'FORM_FAVORITE_COLORS' | translate }}
+    div.col-md-7
+      | {{ response.favoriteColors }}
+  div.unifiConfigure__formControl
+    div.col-md-5
+      | {{ 'FORM_FAVORITE_CITY' | translate }}
+    div.col-md-7
+      | {{ response.favoriteCity }}
+  div.unifiConfigure__formControl
+    div.col-md-5
+      | {{ 'FORM_VERIFIED' | translate }}
+    div.col-md-7(ng-if="response.verified !== undefined")
+      | {{ response.verified ? 'YES' : 'NO' }}
 
